@@ -72,7 +72,7 @@ else:
 y = int(input("Second number: "))
 z = int(input("Third number: "))
 result = 0
-if x == y or y == z:
+if x == y or y == z or x == z:
     print("Calculated sum is ", result)
 else:
     result = x + y + z
@@ -118,9 +118,9 @@ print("The maximum value is ", float(max((x, y ,z))))
 print("The minimum value is ", float(min((x, y ,z)))) """
 
 
-### :heavy_plus_sign: Task 9 - convertion
+### :heavy_plus_sign: Task 9 - conversion
 
-x = (input("Type your value 0 or 1 or a word: " ))
+""" x = input("Type your value 0 or 1 or a word: " )
 if x .isdigit() and x == 0:
     conversion_x = int(x)
     print('Your entered value is now False')
@@ -128,21 +128,24 @@ elif x .isdigit() and x == 1:
     conversion_x = int(x)
     print('Your entered value is now True')
 elif x.isdigit != True:
-     print('Your entered value is now ',x)      
-# if x == 0:
-#     x = False
-#     print('Your entered value is now ',x)
-# elif x == 1:
-#     x = True
-#     print('Your entered value is now ',x)
-# else: 
-#     x1 = x.__str__()
-#     print("Your entered value is now " , x1)
+     print('Your entered value is now ',x)     """  
+
+#---------------------------------------another method--------------------------------------------------------------------------
+x = input("Type your value: ")
+
+if x == '0':
+    x = False
+elif x == '1':
+    x = True
+else:
+    pass
+
+print("Your entered value is now ", x)
 
 
 ### :heavy_plus_sign: Task 10 - divisible number
-
-""" x = int(input("First number: "))
+""" 
+x = int(input("First number: "))
 y = int(input("Second number: "))
 
 if x % y == 0:
